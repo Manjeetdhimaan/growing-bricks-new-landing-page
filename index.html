@@ -141,7 +141,7 @@
 							<!-- <li><a href="#locationmap" class="smooth-scroll">Location Map</a></li> -->
 							<li><a href="#contact" class="smooth-scroll">Contact</a></li>
                             
-                            <li><button type="button" class="btn btn-primary" data-target="#MySecondmodal" data-toggle="modal">Get Quick Quote</button></li>
+                            <li><button type="button" class="btn btn-primary" data-target="#myModal" data-toggle="modal">Get Quick Quote</button></li>
                         </ul><!-- /End Menu Links -->
                     </div><!-- /End Navbar Collapse -->
 						
@@ -604,12 +604,12 @@
 
 
 	<div class="popimg">
-					<button type="button" class="btn btn-primary popimgbg" data-target="#MySecondmodal" data-toggle="modal"></button>
+					<button type="button" class="btn btn-primary popimgbg" data-target="#myModal" data-toggle="modal"></button>
 				</div>	
 
 
 	<div class="flex-col-md-4 align-c popimg1">
-						<button type="button" class="btn btn-primary popimg1bg" data-target="#MySecondmodal" data-toggle="modal"></button>
+						<button type="button" class="btn btn-primary popimg1bg" data-target="#myModal" data-toggle="modal"></button>
 					</div>			
 
 	<div class="whatsappinf">
@@ -619,8 +619,11 @@
 	</div>
     
     
-   <div id="myModal" class="modal fade">
-    <div class="modal-dialog">
+    
+  
+  <!-- Popup modal -->
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
         <div class="modal-content" id="panel">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -632,7 +635,7 @@
 					<div class="form-block bg-glass-dark-06 pd-mini bdr-5 bdr-default cstlog" data-rgen-sm="pd-20" style="padding-top: 5px;">
 							<center><img id="align-cent" src="images/marbella/logo-white.png" alt="Growing Bricks"></center>
 
-						<form>
+						<form method="post">
 							<div class="field-wrp">
 								<div class="form-group">
 									<h3>Enter Full Name</h3>
@@ -651,48 +654,6 @@
 
 							</div>
 							<center> <button type="submit" id="form-submit-modal" class="btn btn-default cstbt">Get in Touch!</button></center>
-						</form><!-- / form -->
-					</div><!-- / form block -->
-			
-            </div>
-        </div>
-    </div>
-</div> 
-    
-  
-  <!-- Popup modal -->
-	<div class="modal fade" id="MySecondmodal">
-		<div class="modal-dialog">
-        <div class="modal-content" id="panel">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <center><h4 class="center-md" style="color: #fff;">Get in Touch!</h4></center>
-            </div>
-            <div class="modal-body mainmodel">
-
-				<!-- form-block -->
-					<div class="form-block bg-glass-dark-06 pd-mini bdr-5 bdr-default cstlog" data-rgen-sm="pd-20" style="padding-top: 5px;">
-							<center><img id="align-cent" src="images/marbella/logo-white.png" alt="Growing Bricks"></center>
-
-						<form method="post">
-							<div class="field-wrp">
-								<div class="form-group">
-									<h3>Enter Full Name</h3>
-									<input class="form-control form-control-light bdr-2 rd-0" data-label="Name" required="" data-msg="Please enter name." name="name" placeholder="Enter your name" aria-required="true" type="text">
-								</div>
-
-								<div class="form-group">
-									<h3>Enter your Phone</h3>
-									<input class="form-control form-control-light bdr-2 rd-0" required="" data-label="Phone" data-msg="Please phone number." name="phone" placeholder="Enter your phone number" aria-required="true" type="text">
-								</div>								
-								
-								<div class="form-group">
-									<h3>Enter your Email</h3>
-									<input class="form-control form-control-light bdr-2 rd-0" data-label="Email" required="" data-msg="Please enter email." name="email" placeholder="Enter your email" aria-required="true" type="email">
-								</div>
-
-							</div>
-							<center> <button type="submit" class="btn btn-default cstbt">Get in Touch!</button></center>
 						</form><!-- / form -->
 					</div><!-- / form block -->
 			
@@ -762,7 +723,7 @@
             Email: email.value,
             MobileNo: phone.value,
             domain: 'Growing Bricks',
-            sendToEmail: "manjeetdhimaan60@gmail.com",
+            sendToEmail: "navneet@growingbricksrealty.com",
             form: 'enquiry'
         }),
         headers: {
@@ -829,7 +790,7 @@
           Email: emailModal.value,
           MobileNo: phoneModal.value,
           domain: 'Growing Bricks',
-          sendToEmail: "manjeetdhimaan60@gmail.com",
+          sendToEmail: "navneet@growingbricksrealty.com",
           form: 'enquiry'
         }),
         headers: {

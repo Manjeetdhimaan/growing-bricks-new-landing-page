@@ -4742,11 +4742,11 @@ input.toggle-round-flat:checked + label:after {
     left: 50%;
     transform: translate(-50%,-50px);
     bottom: 10%;
-    background-color: rgba(169, 246, 166, 0.648);
+    background-color: #335580;
     padding: 4px 16px;
-    color: green;
+    color: white;
     border-radius: 3px;
-    border: 1px solid green;
+    border: 1px solid white;
     opacity: 0;
     /* transform: translate(0, -50px); */
     visibility: hidden;
